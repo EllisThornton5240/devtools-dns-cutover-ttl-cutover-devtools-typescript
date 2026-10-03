@@ -1,0 +1,19 @@
+{
+  "name": "devtools-dns-cutover",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/cutover_service.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "node --import tsx --test test/cutover_plan.test.ts"
+  },
+  "dependencies": {
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}

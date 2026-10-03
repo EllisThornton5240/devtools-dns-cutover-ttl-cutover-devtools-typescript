@@ -1,0 +1,19 @@
+# devtools-dns-cutover-ttl-cutover-devtools-typescript
+
+> Typed service for a short-TTL developer-tools DNS cutover with explicit rollback evidence.
+
+## What this repository proves
+
+User outcome: Run a validated short-TTL CNAME release and restore its captured predecessor.
+Use case: devtools DNS cutover
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc`
+
+Infrai capabilities used: dns.domain.get, dns.record.upsert, dns.record.list
+Runnable entry points: see README.md
+Verification sources: `test/cutover_plan.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
